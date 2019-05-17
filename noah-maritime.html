@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NOAH-Maritime</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-v2.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" onload="startTime()">
+
+  <header>
+  <img style="width: 100%; height: auto;" src="images/rs.png"/>
+  </header>
+
+  <div class="nav-bar">
+		<ul class="nav-bar-ul container">
+		
+      <a href="index.html"><li><img src="images/home.png" style="width: 20px;height:auto"/> Home</li></a>
+      	
+      <div class="dropdown">
+        
+        <a class="dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img style="width:18px;height:auto;" src="images/tables.png"/> <span>Users</a>
+        
+        <div class="dropdown-content">
+            <a class="dropdown-item" href="#noah-maritime-table1">NOAH-Maritime</a>
+            <a class="dropdown-item" href="noah-aviation.html#noah-aviation-table1">NOAH-Aviation</a>
+            <a class="dropdown-item" href="crcs-cads.html#crcs-cads-table1">CRCS-CADS</a>
+        </div>
+      </div>
+      
+      
+			<a onclick="self.close()"><li><img src="images/logout2.png" style="width: 24px; height: 25px;"/> Logout</li></a>		
+		</ul>
+		</div>
+  
+  <div id="wrapper" class="container">
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+  
+	<section id="noah-maritime-table1"></section>
+	
+    <div class="mb-4">
+        <div class="card text-white bg-gradient o-hidden h-100">
+          <a class="card-footer text-white clearfix small z-1" href="#">
+          <div class="card-body">
+            <h2 class="mr-5">NOAH-Maritime</h2>
+          </div>
+          </a>
+        </div>
+      </div>
+    
+    <div class="card mb-3">
+        <div class="card-header">
+          <img style="width:18px;height:auto;" src="images/tables2.png"/> NOAH-Maritime Users
+          <a href="#noah-maritime-user"><button class="add-user" id="add-user" style="position: relative; float: right;">Add User</button></a>
+          </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTableNOAHMaritime" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>User ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Code</th>
+                  <th>Status</th>
+                  <th>Date Created</th>
+                  <th>Date Updated</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>User ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Code</th>
+                  <th>Status</th>
+                  <th>Date Created</th>
+                  <th>Date Updated</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>ADOUG</td>
+                  <td>Andy</td>
+                  <td>Douglas</td>
+                  <td>adouglas@caci.com</td>
+                  <td>571-291-7451</td>
+                  <td>CACI</td>
+                  <td>Active</td>
+                  <td>2009-11-11</td>
+                  <td>2015-08-12</td>
+                </tr>
+                <tr>
+                  <td>AJANN</td>
+                  <td>Amar</td>
+                  <td>Jannupreddy</td>
+                  <td>ajannupreddy@caci.com</td>
+                  <td>571-291-8228</td>
+                  <td>CACI</td>
+                  <td>Active</td>
+                  <td>2011-01-18</td>
+                  <td>2011-01-18</td>
+                </tr>
+                <tr>
+                  <td>AMASO</td>
+                  <td>Abid</td>
+                  <td>Masoud</td>
+                  <td>amasoud@caci.com</td>
+                  <td>571-291-8217</td>
+                  <td>CACI</td>
+                  <td>Active</td>
+                  <td>2011-01-19</td>
+                  <td>2011-01-19</td>
+                </tr>
+                <tr>
+                  <td>CMILL</td>
+                  <td>Caleb</td>
+                  <td>Miller</td>
+                  <td>caleb.miller1@navy.mil</td>
+                  <td>717-605-6934</td>
+                  <td>NAVSUP</td>
+                  <td>Active</td>
+                  <td>2013-12-16</td>
+                  <td>2015-08-17</td>
+                </tr>
+                <tr>
+                  <td>CON1010</td>
+                  <td>Karen</td>
+                  <td>Eisle</td>
+                  <td>keisele@psipax.com</td>
+                  <td>717-991-7542</td>
+                  <td>PSI PAX</td>
+                  <td>Active</td>
+                  <td>2013-11-13</td>
+                  <td>2017-01-10</td>
+                </tr>
+                <tr>
+                  <td>CON1209</td>
+                  <td>Jeff</td>
+                  <td>Horan</td>
+                  <td>jeffrey.horan.ctr@navy.mil</td>
+                  <td>717-605-6510</td>
+                  <td>PSI PAX</td>
+                  <td>Active</td>
+                  <td>2017-02-03</td>
+                  <td>2017-02-24</td>
+                </tr>
+                <tr>
+                  <td>CON1209L</td>
+                  <td>Jeff</td>
+                  <td>Horan</td>
+                  <td>jhoran@psipax.com</td>
+                  <td>717-605-1111</td>
+                  <td>92</td>
+                  <td>Active</td>
+                  <td>2018-01-23</td>
+                  <td>2018-01-23</td>
+                </tr>
+                <tr>
+                  <td>CON1812L</td>
+                  <td>Daniel</td>
+                  <td>Pikora</td>
+                  <td>dpikora@psipax.com</td>
+                  <td>717-605-1111</td>
+                  <td>92</td>
+                  <td>Active</td>
+                  <td>2018-01-23</td>
+                  <td>2018-01-23</td>
+                </tr>
+                <tr>
+                  <td>CON1842</td>
+                  <td>Matt</td>
+                  <td>Miller</td>
+                  <td>matthew.m.miller5.ctr@navy.mil</td>
+                  <td>717-605-3386</td>
+                  <td>PSI</td>
+                  <td>Active</td>
+                  <td>2017-03-20</td>
+                  <td>2017-03-20</td>
+                </tr>
+                <tr>
+                  <td>CON2042</td>
+                  <td>Ian</td>
+                  <td>Carter</td>
+                  <td>icarter@psipax.com</td>
+                  <td>888-888-8888</td>
+                  <td>88</td>
+                  <td>Inactive</td>
+                  <td>2018-04-04</td>
+                  <td>2019-04-17</td>
+                </tr>
+                <tr>
+                  <td>CON2042L</td>
+                  <td>Ian</td>
+                  <td>Carter</td>
+                  <td>ian.carter3.ctr@navy.mil</td>
+                  <td>717-605-1111</td>
+                  <td>92</td>
+                  <td>Inactive</td>
+                  <td>2018-01-23</td>
+                  <td>2019-04-17</td>
+                </tr>
+                <tr>
+                  <td>CONFIGMGR</td>
+                  <td>Configuration</td>
+                  <td>Manager</td>
+                  <td>configmgr@navy.mil</td>
+                  <td>777-777-7777</td>
+                  <td>77777</td>
+                  <td>Active</td>
+                  <td>2017-08-30</td>
+                  <td>2017-08-30</td>
+                </tr>
+                <tr>
+                  <td>CRCS</td>
+                  <td>CRCS</td>
+                  <td>ADMIN</td>
+                  <td>jeff.horan.ctr@navy.mil</td>
+                  <td>703-679-0000</td>
+                  <td>CACI</td>
+                  <td>Active</td>
+                  <td>2010-11-17</td>
+                  <td>2017-02-13</td>
+                </tr>
+                <tr>
+                  <td>CTRLTABMGR</td>
+                  <td>Control Table</td>
+                  <td>Manager</td>
+                  <td>ctrltabmgr@navy.mil</td>
+                  <td>777-777-7777</td>
+                  <td>7777777</td>
+                  <td>Active</td>
+                  <td>2017-08-30</td>
+                  <td>2017-08-30</td>
+                </tr>
+                <tr>
+                  <td>CTRLTABRO</td>
+                  <td>Control Table</td>
+                  <td>RO</td>
+                  <td>ctrlbro@navy.mil</td>
+                  <td>777-777-7777</td>
+                  <td>9215</td>
+                  <td>Active</td>
+                  <td>2018-04-25</td>
+                  <td>2018-04-25</td>
+                </tr>
+                <tr>
+                  <td>AAAA</td>
+                  <td>A</td>
+                  <td>A</td>
+                  <td>a@a.com</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>Inactive</td>
+                  <td>2019-05-06</td>
+                  <td>2019-05-06</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+      
+      
+      <div style="height: 30px;"></div>
+      <section id="noah-maritime-user"></section>
+      
+      <div class="card mb-4" style="background-color:#e9ecef;">
+        <div class="card-header"><img style="width:20px;height:auto;" src="images/profile2.png"/> Add / Modify User</div>
+        <div class="card-body">
+        <form>
+        
+          <div class="edit-users mb-3">
+            <div class="row">
+              <div class="col-lg-2"><h3>User</h3></div>
+              <div class="col-lg-5">
+              <select style="width: 75%; height: 38px; font-size: 16px; margin-left: 0px;">
+              <option>&lt;Add New&gt;</option>
+              <option>GULRI - Gabe Ulrich</option>
+              </select>
+              </div>
+            </div>
+          </div>
+        
+          <div class="edit-users mb-3">
+            <h3>User Information</h3><br/><br/>
+            
+            <div class="row mb-3">
+              <div class="col-lg-2 text-right" style="font-size:20px;">User ID:</div>
+              <div class="col-lg-4"><input style="width:100%;height: 38px;font-size:20px; minlength: 4;" required></input></div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-2 text-right" style="font-size:20px;">First Name:</div>
+              <div class="col-lg-4"><input style="width:100%;height: 38px;font-size:20px;" required></input></div>
+              <div class="col-lg-2 text-right" style="font-size:20px;">Last Name:</div>
+              <div class="col-lg-4"><input style="width:100%;height: 38px;font-size:20px;" required></input></div>
+              </div>
+            <div class="row mb-3">
+              <div class="col-lg-2 text-right" style="font-size:20px;">DN:</div>
+              <div class="col-lg-10"><input style="width:100%;height: 38px;font-size:20px; minlength: 1;" required></input></div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-2 text-right" style="font-size:20px;">Email:</div>
+              <div class="col-lg-4"><input type="email" style="width:100%;height: 38px;font-size:20px;" required></input></div>
+              <div class="col-lg-2 text-right" style="font-size:20px;">Phone Number:</div>
+              <div class="col-lg-4"><input type="tel" style="width:100%;height: 38px;font-size:20px; minlength: 1;" required></input></div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-2 text-right" style="font-size:20px;">Code:</div>
+              <div class="col-lg-4"><input style="width:100%;height: 38px;font-size:20px; minlength: 1;" required></input></div>
+              <div class="col-lg-2 text-right" style="font-size: 20px;">Status:</div>
+              <select style="width: 15%; height: 38px; font-size: 16px; margin-left: 14px;">
+              <option>Active</option>
+              <option>Inactive</option>
+              </select>
+            </div>
+            
+          </div>
+        
+          <div class="edit-users mb-3">
+            <div class="row">
+              <div class="col-lg-2"><h3>Roles</h3></div>
+              <div class="col-lg-4"><div style="font-size:20px">Available</div>
+              <select style="display:inline-block;width:80%;height:150px;" class="custom-select" size="6">
+              <option>ITEM_MANAGER</option>
+              <option>END_USER</option>
+              <option>RATES_MANAGER</option>
+              <option>CONTROL_TABLE_MANAGER</option>
+              <option>FILL_MANAGER</option>
+              <option>PPR_MANAGER</option>
+              </select>
+              </div>
+              <div class="col-lg-2"><button class="mb-4 mt-4 button"style="width:100%;">Add Role</button><button class="mb-4 mt-4 button"style="width:100%;">Remove Role</button></div>
+              <div class="col-lg-4"><div style="font-size:20px;text-align:right;">Assigned</div>
+              <select style="display:inline-block;width:80%;height:150px;float:right;" class="custom-select" size="6">
+              </select></div>
+            </div>
+          </div>
+        
+        </form>
+        </div>
+        
+        <div class="card-footer" style="text-align: right;">
+        	<input type="button" 
+            class="button" 
+            id="save" 
+            name="save" 
+            value="Save" 
+            onclick="javascript:saveUser();"/>
+            
+            <input type="button" 
+            class="button" 
+            id="delete" 
+            name="delete" 
+            value="Delete" 
+            onclick="javascript:deleteUser();"/>
+            
+            <input type="button" 
+            class="button" 
+            id="clear" 
+            name="clear" 
+            value="Clear"/>
+            
+        </div>
+              </div>
+
+      </div>
+      
+      <div style="height: 130px; width: 100%; text-align: right; padding: 15px;">
+      
+      <a href="index.html"><button class="cancel-button" id="cancel" name="cancel">Cancel</button></a>
+            
+            </div>
+      
+      <!-- /.container-fluid -->
+      <div class="text-center disclaimer"> Version: Alpha 
+        <br/><br/>
+        The data contained in this system is Business Sensitive and For Official Use Only (FOUO).
+          The use is responsible for the protection of data extracted, saved or printed from this system. </div>
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright my-auto">
+            <div class="row" style="width:99%;">
+								
+              <div class="col-lg-6">
+                <ul class="footer-li dis-left">
+                    <li>Person</li>
+                    <li>|</li>
+                    <li id="date"></li>
+                    <li>|</li>
+                    <li>Accessibility/Section 508</li>
+                </ul>
+              </div>
+        
+              <div class="col-lg-6">
+                <div class="dis-right">This is an OFFICIAL U.S. Navy Website.<br/>This site DOES NOT contain any CLASSIFIED INFORMATION.</div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+
+    </div>
+  <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#">
+    <img style="" src="images/arrow-up.png">
+  </a>
+
+  <!-- Date/time script -->
+  <script>
+  	function startTime() {
+  
+  	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0');
+	var yyyy = today.getFullYear();
+	var hours = today.getHours() > 12 ? today.getHours() - 12 : today.getHours();
+    var am_pm = today.getHours() >= 12 ? "PM" : "AM";
+        hours = hours < 10 ? "0" + hours : hours;
+    var minutes = today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes();
+    var seconds = today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds();
+    var time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
+		today = mm + '/' + dd + '/' + yyyy + " " + time;
+      
+	document.getElementById("date").innerHTML = today;
+      
+    var t = setTimeout(startTime, 500);
+}
+  </script>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.js"></script>
+  
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>
